@@ -21,11 +21,11 @@ def scale_points(x: List[float], y: List[float], width: int, height: int) -> Tup
     x_new = np.floor(x_norm * width).astype(int)
     y_new = np.floor(y_norm * height).astype(int)
 
-    # Removing values may be equal to height or width
-    # mask = (x_new != 0) & (x_new != w) & (y_new != 0) & (y_new != h)
-    mask = (x_new != width) & (y_new != height)
+    # Changing outlier points to fit in canvas
+    x_new[x_new >= width] = width - 1
+    y_new[y_new >= height] = height - 1
 
-    return x_new[mask], y_new[mask]
+    return x_new, y_new
 
 
 if __name__ == "__main__":
