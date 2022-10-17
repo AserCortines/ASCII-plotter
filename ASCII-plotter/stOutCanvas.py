@@ -60,8 +60,6 @@ def draw_in_canvas(canvas: NDArray,
 
 if __name__ == "__main__":
 
-
-
     print_chart(make_canvas(width=10, height=4))
     print()
     test_canvas = make_canvas(10, 5, display_grid=True)
