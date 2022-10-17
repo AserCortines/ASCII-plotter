@@ -6,13 +6,13 @@ Functions to create axis in canvas:
 
 import numpy as np
 from numpy.typing import NDArray
-from typing import Optional
+from typing import Optional, List
 from src.stOutPlotter import print_chart
 from src.stOutCanvas import make_canvas, draw_in_canvas
 from src.utils import scale_points
 
 
-def add_axis(canvas: NDArray, x: NDArray, y: NDArray, legend: Optional[str] = None) -> NDArray:
+def add_axis(canvas: NDArray, x: List[float], y: List[float], legend: Optional[str] = None) -> NDArray:
     """
     Add x and y axes to canvas.
     :param canvas:
@@ -48,7 +48,7 @@ def add_title(canvas: NDArray, title: str) -> NDArray:
     return np.vstack((title_axis, canvas))
 
 
-def _make_x_axis(x_values: NDArray, width: int, legend: Optional[str] = None) -> NDArray:
+def _make_x_axis(x_values: List[float], width: int, legend: Optional[str] = None) -> NDArray:
     """
     Make x-axis and adds legend (Optional)
     :param x_values:
@@ -72,7 +72,7 @@ def _make_x_axis(x_values: NDArray, width: int, legend: Optional[str] = None) ->
     return x_axis
 
 
-def _make_y_axis(y_values: NDArray, height: int) -> NDArray:
+def _make_y_axis(y_values: List[float], height: int) -> NDArray:
     """
     make y-axis. The width of y-axis is set to 4
     :param y_values:
