@@ -6,7 +6,7 @@ from typing import List, Optional, Tuple
 from src.stOutPlotter import print_chart
 from src.stOutCanvas import make_canvas, draw_in_canvas
 from src.utils import scale_points
-from canvasAxis import add_axis, add_title
+from src.canvasAxis import add_axis, add_title
 
 
 def plot(x: List[float],
