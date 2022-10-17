@@ -1,9 +1,10 @@
 
 import numpy as np
+from numpy.typing import NDArray
 from typing import List, Tuple
 
 
-def scale_points(x: List[float], y: List[float], width: int, height: int) -> Tuple[int]:
+def scale_points(x: List[float], y: List[float], width: int, height: int) -> Tuple[NDArray, NDArray]:
     """
     scale points coordinates to fit in StOut Canvas
     :param x:
