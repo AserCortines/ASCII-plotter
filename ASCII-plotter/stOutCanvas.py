@@ -14,7 +14,7 @@ def make_canvas(width: int,
                 display_grid: bool = False,
                 secondary_color: tuple = (125, 125, 125)) -> NDArray:
     """
-    Create a function for initializing a 2D array based on given dimensions width and height.
+    Creates a Canvas (2D array) based on given dimensions width and height.
     :param width:
     :param height:
     :param display_grid: (boolean)
@@ -40,7 +40,7 @@ def draw_in_canvas(canvas: NDArray,
                    display_grid: bool = False) -> NDArray:
 
     """
-    Draw values in canvas
+    Draw data in canvas
     :param canvas:
     :param values:
     :param primary_color:
