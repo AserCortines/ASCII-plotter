@@ -3,9 +3,9 @@ StOut plot function
 """
 
 from typing import List, Optional, Tuple
-from stOutPlotter import print_chart
-from stOutCanvas import make_canvas, draw_in_canvas
-from utils import scale_points
+from src.stOutPlotter import print_chart
+from src.stOutCanvas import make_canvas, draw_in_canvas
+from src.utils import scale_points
 from canvasAxis import add_axis, add_title
 
 

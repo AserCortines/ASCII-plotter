@@ -5,8 +5,8 @@ Functions to initialize and manipulate StOut canvas
 import numpy as np
 from numpy.typing import NDArray
 from typing import Tuple
-from color import color
-from stOutPlotter import print_chart
+from src.color import color
+from src.stOutPlotter import print_chart
 
 
 def make_canvas(width: int,

@@ -7,9 +7,9 @@ Functions to create axis in canvas:
 import numpy as np
 from numpy.typing import NDArray
 from typing import Optional
-from stOutPlotter import print_chart
-from stOutCanvas import make_canvas, draw_in_canvas
-from utils import scale_points
+from src.stOutPlotter import print_chart
+from src.stOutCanvas import make_canvas, draw_in_canvas
+from src.utils import scale_points
 
 
 def add_axis(canvas: NDArray, x: NDArray, y: NDArray, legend: Optional[str] = None) -> NDArray:
