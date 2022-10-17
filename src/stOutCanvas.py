@@ -27,7 +27,7 @@ def make_canvas(width: int,
     canvas[0][1:-1] = canvas[-1][1:-1] = "-"
     canvas[1:-1, 0] = canvas[1:-1, -1] = "|"
 
-    grid_points = color(".", rgb=secondary_color) if display_grid else " "
+    grid_points = color("·", rgb=secondary_color) if display_grid else " "
 
     canvas[1:-1, 1:-1] = grid_points
 
@@ -49,7 +49,7 @@ def draw_in_canvas(canvas: NDArray,
     """
 
     height, width = canvas.shape
-    dot = color("*", primary_color) if display_grid else color(".", primary_color)
+    dot = color("*", primary_color) if display_grid else color("·", primary_color)
 
     for val in values:
         x, y = val
