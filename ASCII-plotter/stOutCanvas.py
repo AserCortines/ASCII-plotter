@@ -7,10 +7,10 @@ from color import color
 from stOutPlotter import print_chart
 
 
-def get_canvas(width: int,
-               height: int,
-               display_grid: bool = False,
-               secondary_color: tuple = (125, 125, 125)) -> np.typing.NDArray:
+def make_canvas(width: int,
+                height: int,
+                display_grid: bool = False,
+                secondary_color: tuple = (125, 125, 125)) -> np.typing.NDArray:
     """
     Create a function for initializing a 2D array based on given dimensions width and height.
     :param width:
@@ -34,7 +34,7 @@ def get_canvas(width: int,
 
 if __name__ == "__main__":
 
-    print_chart(get_canvas(width=10, height=4))
+    print_chart(make_canvas(width=10, height=4))
     print()
-    print_chart(get_canvas(10, 5, display_grid=True))
+    print_chart(make_canvas(10, 5, display_grid=True))
 
