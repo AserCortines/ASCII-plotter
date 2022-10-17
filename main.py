@@ -47,14 +47,14 @@ def example3() -> None:
 
 if __name__ == "__main__":
 
-     # Example 1
-     print("--- Example 1 --- \n")
-     example1()
+    # Example 1
+    print("--- Example 1 --- \n")
+    example1()
 
-     # Example 2
-     print("--- Example 2 --- \n")
-     example2()
+    # Example 2
+    print("--- Example 2 --- \n")
+    example2()
 
-     # Example 3
-     print("--- Example 3 --- \n")
-     example3()
+    # Example 3
+    print("--- Example 3 --- \n")
+    example3()
