@@ -35,7 +35,7 @@ def make_canvas(width: int,
 
 
 def draw_in_canvas(canvas: NDArray,
-                   *values: Tuple[int],
+                   *values: Tuple[int, int],
                    primary_color: Tuple[int] = (0, 0, 255),
                    display_grid: bool = False) -> NDArray:
 
