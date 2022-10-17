@@ -19,7 +19,6 @@ def plot(x: List[float],
          primary_color: Tuple[int, int, int] = (0, 0, 255),
          secondary_color: Tuple[int, int, int] = (125, 125, 125)) -> None:
 
-
     canvas = make_canvas(width, height, display_grid, secondary_color)
 
     x_scaled, y_scaled = scale_points(x, y, width, height)

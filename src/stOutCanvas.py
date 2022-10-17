@@ -36,7 +36,7 @@ def make_canvas(width: int,
 
 def draw_in_canvas(canvas: NDArray,
                    *values: Tuple[int, int],
-                   primary_color: Tuple[int] = (0, 0, 255),
+                   primary_color: Tuple[int, int, int] = (0, 0, 255),
                    display_grid: bool = False) -> NDArray:
 
     """
@@ -67,7 +67,3 @@ if __name__ == "__main__":
 
     print()
     print_chart(draw_in_canvas(test_canvas, (5, 2), (6, 3), display_grid=True))
-
-
-
-
