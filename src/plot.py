@@ -16,8 +16,8 @@ def plot(x: List[float],
          display_grid: bool = False,
          title: Optional[str] = None,
          legend: Optional[str] = None,
-         primary_color: Optional[Tuple[int]] = (0, 0, 255),
-         secondary_color: Optional[Tuple[int]] = (125, 125, 125)) -> None:
+         primary_color: Tuple[int, int, int] = (0, 0, 255),
+         secondary_color: Tuple[int, int, int] = (125, 125, 125)) -> None:
 
 
     canvas = make_canvas(width, height, display_grid, secondary_color)
