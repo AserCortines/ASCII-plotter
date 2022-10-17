@@ -27,9 +27,10 @@ def scale_points(x: List[float], y: List[float], width: int, height: int) -> Tup
 
     return x_new[mask], y_new[mask]
 
-if __name__ == "__main__":
-    scale = .1
-    x = [scale * i for i in range(10)]
-    y = [np.sin(scale * i) for i in range(10)]
 
-    print(scale_points(x, y, 100, 50))
+if __name__ == "__main__":
+    scale, n = .1, 10
+    x_vals = [scale * i for i in range(n)]
+    y_vals = [np.sin(scale * i) for i in range(n)]
+
+    print(scale_points(x_vals, y_vals, 100, 50))
