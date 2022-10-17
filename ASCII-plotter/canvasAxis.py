@@ -34,6 +34,12 @@ def add_axis(canvas: NDArray, x: NDArray, y: NDArray, legend: Optional[str] = No
 
 
 def add_title(canvas: NDArray, title: str) -> NDArray:
+    """
+    Add title to canvas
+    :param canvas:
+    :param title:
+    :return:
+    """
 
     _, width = canvas.shape
     title = f"{title[:width]:^{width}}"
